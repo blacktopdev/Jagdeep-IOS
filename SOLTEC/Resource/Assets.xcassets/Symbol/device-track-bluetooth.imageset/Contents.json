@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "device-track-bluetooth.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

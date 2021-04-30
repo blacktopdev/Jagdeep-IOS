@@ -1,0 +1,134 @@
+{
+    "arousals": [
+        {
+            "started": 100,
+            "duration": 53,
+            "pulseLow": 75,
+            "pulseHigh": 86
+        },
+        {
+            "started": 200,
+            "duration": 24,
+            "pulseLow": 90,
+            "pulseHigh": 68
+        },
+        {
+            "started": 300,
+            "duration": 18,
+            "pulseLow": 86,
+            "pulseHigh": 66
+        },
+        {
+            "started": 400,
+            "duration": 5,
+            "pulseLow": 74,
+            "pulseHigh": 46
+        },
+        {
+            "started": 500,
+            "duration": 53,
+            "pulseLow": 21,
+            "pulseHigh": 88
+        }
+    ],
+    "desaturations": [
+        {
+            "started": 100,
+            "duration": 39,
+            "degreeMean": 22,
+            "degreeMax": 90
+        },
+        {
+            "started": 200,
+            "duration": 47,
+            "degreeMean": 20,
+            "degreeMax": 67
+        },
+        {
+            "started": 300,
+            "duration": 22,
+            "degreeMean": 29,
+            "degreeMax": 61
+        }
+    ],
+    "o2ses": [
+        {
+            "started": 100,
+            "duration": 55,
+            "degreeMean": 59,
+            "degreeMax": 22
+        },
+        {
+            "started": 200,
+            "duration": 49,
+            "degreeMean": 51,
+            "degreeMax": 70
+        },
+        {
+            "started": 300,
+            "duration": 6,
+            "degreeMean": 42,
+            "degreeMax": 63
+        },
+        {
+            "started": 400,
+            "duration": 55,
+            "degreeMean": 54,
+            "degreeMax": 71
+        }
+    ],
+    "motions": [
+        {
+            "started": 100,
+            "duration": 43,
+            "intensityMean": 42,
+            "intensityMax": 70
+        },
+        {
+            "started": 200,
+            "duration": 34,
+            "intensityMean": 24,
+            "intensityMax": 32
+        }
+    ],
+    "sounds": [
+        {
+            "started": 100,
+            "duration": 49,
+            "intensityMean": 88,
+            "frequencyMax": 91
+        },
+        {
+            "started": 200,
+            "duration": 56,
+            "intensityMean": 83,
+            "frequencyMax": 60
+        },
+        {
+            "started": 300,
+            "duration": 23,
+            "intensityMean": 95,
+            "frequencyMax": 42
+        },
+        {
+            "started": 400,
+            "duration": 33,
+            "intensityMean": 91,
+            "frequencyMax": 76
+        }
+    ],
+    "protocols": [
+        {
+            "started": 100,
+            "duration": 11,
+            "type": "remRise",
+            "parameters": "someMumboJumboJsonEscapedBase64EncodedBlobOrSimilar"
+        },
+        {
+            "started": 200,
+            "duration": 22,
+            "type": "deltaFlat",
+            "parameters": "someMumboJumboJsonEscapedBase64EncodedBlobOrSimilar"
+        }
+    ]
+}

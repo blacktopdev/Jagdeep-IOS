@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H114" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="0.8">
+    <entity name="SleepAggregateMetric" representedClassName="CoreSleepAggregateMetric" syncable="YES" codeGenerationType="class">
+        <attribute name="max" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="min" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="range" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="breathDeviation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="breathDeviation" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="breathMean" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="breathMean" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="highMean" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="highMean" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="highPeak" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="highPeak" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="highPower" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="highPower" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="highRatio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="highRatio" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="lowMean" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="lowMean" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="lowPeak" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="lowPeak" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="lowPower" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="lowPower" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="lowRatio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="lowRatio" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="minuteVent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="minuteVent" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="novelBandRatio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="novelBandRatio" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="o2Deviation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="o2Deviation" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="pulseDeviation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="pulseDeviation" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="pulseMean" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="pulseMean" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="totalPower" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="totalPower" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="veryLowMean" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="veryLowMean" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="veryLowPeak" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="veryLowPeak" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="veryLowPower" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="veryLowPower" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="veryLowRatio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionAggregate" inverseName="veryLowRatio" inverseEntity="SleepSessionAggregate"/>
+    </entity>
+    <entity name="SleepArousal" representedClassName="CoreSleepArousal" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pulseHigh" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pulseLow" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="started" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="stream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStream" inverseName="arousals" inverseEntity="SleepStream"/>
+    </entity>
+    <entity name="SleepDesaturation" representedClassName="CoreSleepDesaturation" syncable="YES" codeGenerationType="class">
+        <attribute name="degreeMax" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="degreeMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="duration" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="started" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="stream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStream" inverseName="desaturations" inverseEntity="SleepStream"/>
+    </entity>
+    <entity name="SleepDevice" representedClassName="CoreSleepDevice" syncable="YES" codeGenerationType="class">
+        <attribute name="batteryLevel" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="error" optional="YES" attributeType="String"/>
+        <attribute name="revision" attributeType="String"/>
+        <attribute name="serialNumber" attributeType="String"/>
+        <attribute name="status" attributeType="String"/>
+        <attribute name="syncDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSession" inverseName="devices" inverseEntity="SleepSession"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="devices" inverseEntity="User"/>
+    </entity>
+    <entity name="SleepEpoch" representedClassName="CoreSleepEpoch" syncable="YES" codeGenerationType="class">
+        <attribute name="o2Deviation" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="o2Mean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="o2Min" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pulseDeviation" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pulseMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="cumulativeTime" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepStageMetric" inverseName="epoch" inverseEntity="SleepStageMetric"/>
+        <relationship name="normal" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepSignal" inverseName="epoch" inverseEntity="SleepSignal"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSession" inverseName="epochs" inverseEntity="SleepSession"/>
+        <relationship name="stage" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepStageResult" inverseName="epoch" inverseEntity="SleepStageResult"/>
+    </entity>
+    <entity name="SleepEventMetric" representedClassName="CoreSleepEventMetric" syncable="YES" codeGenerationType="class">
+        <attribute name="arousalCount" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="desatCount" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="motionCount" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="o2seCount" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="protocolCount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="soundCount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="delta" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionMetric" inverseName="deltaEvent" inverseEntity="SleepSessionMetric"/>
+        <relationship name="light" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionMetric" inverseName="lightEvent" inverseEntity="SleepSessionMetric"/>
+        <relationship name="rem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionMetric" inverseName="remEvent" inverseEntity="SleepSessionMetric"/>
+    </entity>
+    <entity name="SleepMotion" representedClassName="CoreSleepMotion" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="intensityMax" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="intensityMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="started" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="stream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStream" inverseName="motions" inverseEntity="SleepStream"/>
+    </entity>
+    <entity name="SleepO2SE" representedClassName="CoreSleepO2SE" syncable="YES" codeGenerationType="class">
+        <attribute name="degreeMax" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="degreeMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="duration" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="started" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="stream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStream" inverseName="o2ses" inverseEntity="SleepStream"/>
+    </entity>
+    <entity name="SleepProtocol" representedClassName="CoreSleepProtocol" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mField" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="parameters" optional="YES" attributeType="String"/>
+        <attribute name="started" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="stream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStream" inverseName="protocols" inverseEntity="SleepStream"/>
+    </entity>
+    <entity name="SleepScore" representedClassName="CoreSleepScore" syncable="YES" codeGenerationType="class">
+        <attribute name="arousalIndex" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="delta" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="desatIndex" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="duration" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="efficiency" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="latency" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="o2seIndex" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="overall" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rem" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="soundIndex" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSession" inverseName="score" inverseEntity="SleepSession"/>
+    </entity>
+    <entity name="SleepSession" representedClassName="CoreSleepSession" syncable="YES" codeGenerationType="class">
+        <attribute name="appVersion" attributeType="String"/>
+        <attribute name="deltaHFPF" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="started" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="stopped" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="type" attributeType="String"/>
+        <attribute name="uuid" attributeType="String"/>
+        <relationship name="devices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SleepDevice" inverseName="session" inverseEntity="SleepDevice"/>
+        <relationship name="epochs" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SleepEpoch" inverseName="session" inverseEntity="SleepEpoch"/>
+        <relationship name="metric" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepSessionMetric" inverseName="session" inverseEntity="SleepSessionMetric"/>
+        <relationship name="score" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepScore" inverseName="session" inverseEntity="SleepScore"/>
+        <relationship name="sessionAggregate" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepSessionAggregate" inverseName="session" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="stageAggregate" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepStageAggregate" inverseName="session" inverseEntity="SleepStageAggregate"/>
+        <relationship name="stream" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepStream" inverseName="session" inverseEntity="SleepStream"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="sessions" inverseEntity="User"/>
+        <fetchIndex name="byStartedDesc">
+            <fetchIndexElement property="started" type="Binary" order="descending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="SleepSessionAggregate" representedClassName="CoreSleepSessionAggregate" syncable="YES" codeGenerationType="class">
+        <relationship name="breathDeviation" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="breathDeviation" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="breathMean" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="breathMean" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="highMean" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="highMean" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="highPeak" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="highPeak" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="highPower" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="highPower" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="highRatio" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="highRatio" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="lowMean" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="lowMean" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="lowPeak" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="lowPeak" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="lowPower" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="lowPower" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="lowRatio" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="lowRatio" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="minuteVent" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="minuteVent" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="novelBandRatio" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="novelBandRatio" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="o2Deviation" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="o2Deviation" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="pulseDeviation" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="pulseDeviation" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="pulseMean" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="pulseMean" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSession" inverseName="sessionAggregate" inverseEntity="SleepSession"/>
+        <relationship name="totalPower" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="totalPower" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="trend" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepTrend" inverseName="sessionAggregate" inverseEntity="SleepTrend"/>
+        <relationship name="veryLowMean" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="veryLowMean" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="veryLowPeak" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="veryLowPeak" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="veryLowPower" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="veryLowPower" inverseEntity="SleepAggregateMetric"/>
+        <relationship name="veryLowRatio" maxCount="1" deletionRule="Cascade" destinationEntity="SleepAggregateMetric" inverseName="veryLowRatio" inverseEntity="SleepAggregateMetric"/>
+    </entity>
+    <entity name="SleepSessionMetric" representedClassName="CoreSleepSessionMetric" syncable="YES" codeGenerationType="class">
+        <attribute name="recordDuration" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sleepDuration" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sleepOnset" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="cumulativeTime" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepStageMetric" inverseName="sessionMetric" inverseEntity="SleepStageMetric"/>
+        <relationship name="deltaEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepEventMetric" inverseName="delta" inverseEntity="SleepEventMetric"/>
+        <relationship name="lightEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepEventMetric" inverseName="light" inverseEntity="SleepEventMetric"/>
+        <relationship name="remEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepEventMetric" inverseName="rem" inverseEntity="SleepEventMetric"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSession" inverseName="metric" inverseEntity="SleepSession"/>
+        <relationship name="stageO2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStageMetric" inverseName="sessionO2" inverseEntity="SleepStageMetric"/>
+        <relationship name="stagePulse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStageMetric" inverseName="sessionPulse" inverseEntity="SleepStageMetric"/>
+    </entity>
+    <entity name="SleepSignal" representedClassName="CoreSleepSignal" syncable="YES" codeGenerationType="class">
+        <attribute name="breathDeviation" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="breathMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="highMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="highPeak" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="highPower" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="highRatio" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lowMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lowPeak" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lowPower" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lowRatio" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="minuteVent" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="novelBandRatio" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="o2Deviation" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pulseDeviation" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pulseMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalPower" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="veryLowMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="veryLowPeak" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="veryLowPower" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="veryLowRatio" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="epoch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepEpoch" inverseName="normal" inverseEntity="SleepEpoch"/>
+    </entity>
+    <entity name="SleepSound" representedClassName="CoreSleepSound" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="frequencyMax" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="intensityMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="started" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="stream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStream" inverseName="sounds" inverseEntity="SleepStream"/>
+    </entity>
+    <entity name="SleepStageAggregate" representedClassName="CoreSleepStageAggregate" syncable="YES" codeGenerationType="class">
+        <relationship name="deltaMean" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepStageMean" inverseName="delta" inverseEntity="SleepStageMean"/>
+        <relationship name="lightMean" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepStageMean" inverseName="light" inverseEntity="SleepStageMean"/>
+        <relationship name="remMean" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepStageMean" inverseName="rem" inverseEntity="SleepStageMean"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSession" inverseName="stageAggregate" inverseEntity="SleepSession"/>
+        <relationship name="trend" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepTrend" inverseName="stageAggregate" inverseEntity="SleepTrend"/>
+        <relationship name="wakeMean" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepStageMean" inverseName="wake" inverseEntity="SleepStageMean"/>
+    </entity>
+    <entity name="SleepStageMean" representedClassName="CoreSleepStageMean" syncable="YES" codeGenerationType="class">
+        <attribute name="o2Deviation" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pulseDeviation" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pulseMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="veryLowMean" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="veryLowPower" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="veryLowRatio" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="wakeRemDiff" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="delta" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStageAggregate" inverseName="deltaMean" inverseEntity="SleepStageAggregate"/>
+        <relationship name="light" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStageAggregate" inverseName="lightMean" inverseEntity="SleepStageAggregate"/>
+        <relationship name="rem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStageAggregate" inverseName="remMean" inverseEntity="SleepStageAggregate"/>
+        <relationship name="wake" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepStageAggregate" inverseName="wakeMean" inverseEntity="SleepStageAggregate"/>
+    </entity>
+    <entity name="SleepStageMetric" representedClassName="CoreSleepStageMetric" syncable="YES" codeGenerationType="class">
+        <attribute name="delta" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="light" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rem" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="wake" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="epoch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepEpoch" inverseName="cumulativeTime" inverseEntity="SleepEpoch"/>
+        <relationship name="sessionMetric" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionMetric" inverseName="cumulativeTime" inverseEntity="SleepSessionMetric"/>
+        <relationship name="sessionO2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionMetric" inverseName="stageO2" inverseEntity="SleepSessionMetric"/>
+        <relationship name="sessionPulse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSessionMetric" inverseName="stagePulse" inverseEntity="SleepSessionMetric"/>
+        <relationship name="trend" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepTrend" inverseName="cumulativeTimes" inverseEntity="SleepTrend"/>
+    </entity>
+    <entity name="SleepStageResult" representedClassName="CoreSleepStageResult" syncable="YES" codeGenerationType="class">
+        <attribute name="filtered" attributeType="String"/>
+        <attribute name="filteredCount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="final" attributeType="String"/>
+        <attribute name="modifiedCount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="raw" attributeType="String"/>
+        <attribute name="realtime" attributeType="String"/>
+        <relationship name="epoch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepEpoch" inverseName="stage" inverseEntity="SleepEpoch"/>
+    </entity>
+    <entity name="SleepStream" representedClassName="CoreSleepStream" syncable="YES" codeGenerationType="class">
+        <relationship name="arousals" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SleepArousal" inverseName="stream" inverseEntity="SleepArousal"/>
+        <relationship name="desaturations" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SleepDesaturation" inverseName="stream" inverseEntity="SleepDesaturation"/>
+        <relationship name="motions" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SleepMotion" inverseName="stream" inverseEntity="SleepMotion"/>
+        <relationship name="o2ses" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SleepO2SE" inverseName="stream" inverseEntity="SleepO2SE"/>
+        <relationship name="protocols" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SleepProtocol" inverseName="stream" inverseEntity="SleepProtocol"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SleepSession" inverseName="stream" inverseEntity="SleepSession"/>
+        <relationship name="sounds" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SleepSound" inverseName="stream" inverseEntity="SleepSound"/>
+    </entity>
+    <entity name="SleepSystem" representedClassName="CoreSleepSystem" syncable="YES" codeGenerationType="class">
+        <attribute name="alarmSecond" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="hasBaseline" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isAlarmOn" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="system" inverseEntity="User"/>
+    </entity>
+    <entity name="SleepTrend" representedClassName="CoreSleepTrend" syncable="YES" codeGenerationType="class">
+        <attribute name="deltaHFPF" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="epochCounts" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[Int]"/>
+        <relationship name="cumulativeTimes" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SleepStageMetric" inverseName="trend" inverseEntity="SleepStageMetric"/>
+        <relationship name="sessionAggregate" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepSessionAggregate" inverseName="trend" inverseEntity="SleepSessionAggregate"/>
+        <relationship name="stageAggregate" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepStageAggregate" inverseName="trend" inverseEntity="SleepStageAggregate"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="trend" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="CoreUser" syncable="YES" codeGenerationType="class">
+        <attribute name="birthDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="heightCm" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="middleInitial" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <attribute name="uuid" attributeType="String"/>
+        <attribute name="weightKg" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="devices" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SleepDevice" inverseName="user" inverseEntity="SleepDevice"/>
+        <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SleepSession" inverseName="user" inverseEntity="SleepSession"/>
+        <relationship name="system" maxCount="1" deletionRule="Cascade" destinationEntity="SleepSystem" inverseName="user" inverseEntity="SleepSystem"/>
+        <relationship name="trend" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SleepTrend" inverseName="user" inverseEntity="SleepTrend"/>
+    </entity>
+    <elements>
+        <element name="SleepAggregateMetric" positionX="187.70703125" positionY="415.96875" width="128" height="403"/>
+        <element name="SleepArousal" positionX="675.04296875" positionY="-287.72265625" width="128" height="118"/>
+        <element name="SleepDesaturation" positionX="706.5390625" positionY="-153.359375" width="128" height="118"/>
+        <element name="SleepDevice" positionX="-607.1484375" positionY="-121.7578125" width="128" height="163"/>
+        <element name="SleepEpoch" positionX="523.4375" positionY="246.83984375" width="128" height="178"/>
+        <element name="SleepEventMetric" positionX="-623.390625" positionY="111.0546875" width="128" height="178"/>
+        <element name="SleepMotion" positionX="717.96875" positionY="-14.7734375" width="128" height="118"/>
+        <element name="SleepO2SE" positionX="864.20703125" positionY="10.85546875" width="128" height="118"/>
+        <element name="SleepProtocol" positionX="850.82421875" positionY="164.6171875" width="128" height="118"/>
+        <element name="SleepScore" positionX="-237.734375" positionY="-327.58203125" width="128" height="208"/>
+        <element name="SleepSession" positionX="-417.45703125" positionY="-197.078125" width="128" height="253"/>
+        <element name="SleepSessionAggregate" positionX="-185.28515625" positionY="465.11328125" width="128" height="373"/>
+        <element name="SleepSessionMetric" positionX="-138.59765625" positionY="60.04296875" width="128" height="193"/>
+        <element name="SleepSignal" positionX="725.984375" positionY="459.54296875" width="128" height="358"/>
+        <element name="SleepSound" positionX="789.8125" positionY="302.30078125" width="128" height="118"/>
+        <element name="SleepStageAggregate" positionX="-210.09375" positionY="255.3125" width="128" height="133"/>
+        <element name="SleepStageMean" positionX="231.42578125" positionY="159.99609375" width="128" height="208"/>
+        <element name="SleepStageMetric" positionX="312.828125" positionY="-46.94140625" width="128" height="178"/>
+        <element name="SleepStageResult" positionX="340.37109375" positionY="463.015625" width="128" height="148"/>
+        <element name="SleepStream" positionX="500.671875" positionY="15.3203125" width="128" height="148"/>
+        <element name="SleepSystem" positionX="-616.68359375" positionY="-278.4375" width="128" height="103"/>
+        <element name="SleepTrend" positionX="137.7265625" positionY="-116.01171875" width="128" height="133"/>
+        <element name="User" positionX="-797.50390625" positionY="-196.875" width="128" height="283"/>
+    </elements>
+</model>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>667745270576-jnq9r0plnl6fcnbgcd8hrd800uvd0s7q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.667745270576-jnq9r0plnl6fcnbgcd8hrd800uvd0s7q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB205stIKHhr3Qk-38mqBeXQn4F5K2biXM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>667745270576</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.soltechealth.zme</string>
+	<key>PROJECT_ID</key>
+	<string>z-me-3eb13</string>
+	<key>STORAGE_BUCKET</key>
+	<string>z-me-3eb13.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:667745270576:ios:3b18e7c7579697a06de6f5</string>
+	<key>DATABASE_URL</key>
+	<string>https://z-me-3eb13.firebaseio.com</string>
+</dict>
+</plist>

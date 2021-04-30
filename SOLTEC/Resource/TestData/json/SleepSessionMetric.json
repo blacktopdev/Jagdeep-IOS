@@ -1,0 +1,47 @@
+{
+  "recordDuration": 21729,
+  "sleepOnset": 2038,
+  "sleepDuration": 19691,
+  "cumulativeTime": {
+    "delta": 2872,
+    "wake": 3947,
+    "rem": 2079,
+    "light": 10793
+  },
+  "stagePulse": {
+    "delta": 20,
+    "wake": 44,
+    "rem": 81,
+    "light": 70
+  },
+  "stageO2": {
+    "delta": 88,
+    "wake": 92,
+    "rem": 52,
+    "light": 27
+  },
+  "remEvent": {
+    "arousalCount": 2,
+    "desatCount": 4,
+    "o2seCount": 2,
+    "motionCount": 4,
+    "soundCount": 1,
+    "protocolCount": 4
+  },
+  "lightEvent": {
+    "arousalCount": 4,
+    "desatCount": 3,
+    "o2seCount": 1,
+    "motionCount": 4,
+    "soundCount": 3,
+    "protocolCount": 4
+  },
+  "deltaEvent": {
+    "arousalCount": 4,
+    "desatCount": 1,
+    "o2seCount": 1,
+    "motionCount": 2,
+    "soundCount": 1,
+    "protocolCount": 5
+  }
+}

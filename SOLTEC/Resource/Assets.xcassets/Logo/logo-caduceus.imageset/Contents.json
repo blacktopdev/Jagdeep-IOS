@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "logo-caduceus.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "uuid": "1398ee19-506d-4141-82b2-93c7f91b4ae1",
+  "started": "2018-04-18T02:05:08.022Z",
+  "stopped": "2020-06-06T14:20:10.059Z",
+  "type": "nap",
+  "appVersion": "0.1.1#322",
+  "deltaHFPF": 49,
+  "devices": [
+    {
+      "serialNumber": "60392a5dc230e873266c3c0c",
+      "revision": "XX:YY",
+      "status": "error",
+      "lastError": "elit pariatur dolore deserunt ad elit",
+      "lastSync": "2020-03-31T22:00:40.760Z",
+      "batteryLevel": 55
+    }
+  ],
+  "score": {
+    "overall": 49,
+    "duration": 75,
+    "delta": 65,
+    "rem": 48,
+    "latency": 58,
+    "efficiency": 71,
+    "o2se": 4,
+    "timeIndex": 4,
+    "arousalIndex": 2,
+    "fragIndex": 1
+  },
+  "metric": {
+    "recordDuration": 21729,
+    "sleepOnset": 2038,
+    "sleepDuration": 19691,
+    "cumulativeTime": {
+      "delta": 2872,
+      "wake": 3947,
+      "rem": 2079,
+      "light": 10793
+    },
+    "stagePulse": {
+      "delta": 20,
+      "wake": 44,
+      "rem": 81,
+      "light": 70
+    },
+    "stageO2": {
+      "delta": 88,
+      "wake": 92,
+      "rem": 52,
+      "light": 27
+    },
+    "remEvent": {
+      "arousalCount": 2,
+      "desatCount": 4,
+      "o2seCount": 2,
+      "motionCount": 4,
+      "soundCount": 1,
+      "protocolCount": 4
+    },
+    "lightEvent": {
+      "arousalCount": 4,
+      "desatCount": 3,
+      "o2seCount": 1,
+      "motionCount": 4,
+      "soundCount": 3,
+      "protocolCount": 4
+    },
+    "deltaEvent": {
+      "arousalCount": 4,
+      "desatCount": 1,
+      "o2seCount": 1,
+      "motionCount": 2,
+      "soundCount": 1,
+      "protocolCount": 5
+    }
+  },
+  "stageAggregate": {
+    "wakeMean": {
+      "pulseMean": 26,
+      "pulseDeviation": 93,
+      "o2Deviation": 70,
+      "veryLowPower": 65,
+      "veryLowMean": 72,
+      "wakeRemDiff": 53,
+      "veryLowRatio": 34
+    },
+    "remMean": {
+      "pulseMean": 88,
+      "pulseDeviation": 64,
+      "o2Deviation": 52,
+      "veryLowPower": 91,
+      "veryLowMean": 31,
+      "wakeRemDiff": 31,
+      "veryLowRatio": 28
+    },
+    "lightMean": {
+      "pulseMean": 87,
+      "pulseDeviation": 39,
+      "o2Deviation": 66,
+      "veryLowPower": 45,
+      "veryLowMean": 32,
+      "wakeRemDiff": 25,
+      "veryLowRatio": 84
+    },
+    "deltaMean": {
+      "pulseMean": 46,
+      "pulseDeviation": 78,
+      "o2Deviation": 100,
+      "veryLowPower": 67,
+      "veryLowMean": 68,
+      "wakeRemDiff": 77,
+      "veryLowRatio": 77
+    }
+  },
+  "sessionAggregate": {
+    "veryLowPower": {
+      "min": 29,
+      "max": 75,
+      "mean": 52,
+      "range": 46
+    },
+    "lowPower": {
+      "min": 32,
+      "max": 94,
+      "mean": 63,
+      "range": 62
+    },
+    "highPower": {
+      "min": 26,
+      "max": 86,
+      "mean": 56,
+      "range": 60
+    },
+    "veryLowPeak": {
+      "min": 22,
+      "max": 83,
+      "mean": 52.5,
+      "range": 61
+    },
+    "lowPeak": {
+      "min": 49,
+      "max": 88,
+      "mean": 68.5,
+      "range": 39
+    },
+    "highPeak": {
+      "min": 48,
+      "max": 94,
+      "mean": 71,
+      "range": 46
+    },
+    "veryLowMean": {
+      "min": 25,
+      "max": 60,
+      "mean": 42.5,
+      "range": 35
+    },
+    "lowMean": {
+      "min": 46,
+      "max": 90,
+      "mean": 68,
+      "range": 44
+    },
+    "highMean": {
+      "min": 27,
+      "max": 63,
+      "mean": 45,
+      "range": 36
+    },
+    "totalPower": {
+      "min": 46,
+      "max": 94,
+      "mean": 70,
+      "range": 48
+    },
+    "highRatio": {
+      "min": 33,
+      "max": 63,
+      "mean": 48,
+      "range": 30
+    },
+    "lowRatio": {
+      "min": 29,
+      "max": 97,
+      "mean": 63,
+      "range": 68
+    },
+    "veryLowRatio": {
+      "min": 31,
+      "max": 66,
+      "mean": 48.5,
+      "range": 35
+    },
+    "newBandRatio": {
+      "min": 41,
+      "max": 71,
+      "mean": 56,
+      "range": 30
+    },
+    "pulseMean": {
+      "min": 41,
+      "max": 61,
+      "mean": 51,
+      "range": 20
+    },
+    "pulseDeviation": {
+      "min": 28,
+      "max": 65,
+      "mean": 46.5,
+      "range": 37
+    },
+    "o2Deviation": {
+      "min": 33,
+      "max": 89,
+      "mean": 61,
+      "range": 56
+    },
+    "breathMean": {
+      "min": 39,
+      "max": 60,
+      "mean": 49.5,
+      "range": 21
+    },
+    "breathDeviation": {
+      "min": 31,
+      "max": 74,
+      "mean": 52.5,
+      "range": 43
+    },
+    "minuteVent": {
+      "min": 35,
+      "max": 80,
+      "mean": 57.5,
+      "range": 45
+    }
+  },
+  "stream": {
+    "arousals": [
+      {
+        "started": 100,
+        "duration": 35,
+        "pulseLow": 100,
+        "pulseHigh": 20
+      },
+      {
+        "started": 200,
+        "duration": 13,
+        "pulseLow": 37,
+        "pulseHigh": 25
+      },
+      {
+        "started": 300,
+        "duration": 7,
+        "pulseLow": 84,
+        "pulseHigh": 23
+      },
+      {
+        "started": 400,
+        "duration": 28,
+        "pulseLow": 35,
+        "pulseHigh": 73
+      },
+      {
+        "started": 500,
+        "duration": 3,
+        "pulseLow": 21,
+        "pulseHigh": 26
+      }
+    ],
+    "desaturations": [
+      {
+        "started": 100,
+        "duration": 60,
+        "degreeMean": 83,
+        "degreeMax": 46
+      },
+      {
+        "started": 200,
+        "duration": 33,
+        "degreeMean": 45,
+        "degreeMax": 21
+      }
+    ],
+    "o2ses": [
+      {
+        "started": 100,
+        "duration": 26,
+        "degreeMean": 32,
+        "degreeMax": 49
+      },
+      {
+        "started": 200,
+        "duration": 44,
+        "degreeMean": 51,
+        "degreeMax": 50
+      },
+      {
+        "started": 300,
+        "duration": 42,
+        "degreeMean": 87,
+        "degreeMax": 79
+      },
+      {
+        "started": 400,
+        "duration": 26,
+        "degreeMean": 68,
+        "degreeMax": 60
+      }
+    ],
+    "motions": [
+      {
+        "started": 100,
+        "duration": 39,
+        "intensityMean": 38,
+        "intensityMax": 64
+      },
+      {
+        "started": 200,
+        "duration": 10,
+        "intensityMean": 24,
+        "intensityMax": 27
+      },
+      {
+        "started": 300,
+        "duration": 15,
+        "intensityMean": 91,
+        "intensityMax": 92
+      }
+    ],
+    "sounds": [
+      {
+        "started": 100,
+        "duration": 51,
+        "intensityMean": 30,
+        "frequencyMax": 72
+      },
+      {
+        "started": 200,
+        "duration": 29,
+        "intensityMean": 44,
+        "frequencyMax": 94
+      }
+    ],
+    "protocols": [
+      {
+        "started": 100,
+        "duration": 2,
+        "type": "deltaDive",
+        "parameters": "someMumboJumboJsonEscapedBase64EncodedBlobOrSimilar"
+      },
+      {
+        "started": 200,
+        "duration": 23,
+        "type": "remRise",
+        "parameters": "someMumboJumboJsonEscapedBase64EncodedBlobOrSimilar"
+      },
+      {
+        "started": 300,
+        "duration": 12,
+        "type": "deltaFlat",
+        "parameters": "someMumboJumboJsonEscapedBase64EncodedBlobOrSimilar"
+      },
+      {
+        "started": 400,
+        "duration": 13,
+        "type": "deltaDive",
+        "parameters": "someMumboJumboJsonEscapedBase64EncodedBlobOrSimilar"
+      }
+    ]
+  },
+  "epochs": [
+    {
+      "pulseMean": 66,
+      "pulseDeviation": 25,
+      "o2Mean": 62,
+      "o2Min": 43,
+      "o2Deviation": 43,
+      "stage": {
+        "raw": "light",
+        "filtered": "rem",
+        "final": "wake",
+        "realtime": "wake",
+        "filteredCount": 34,
+        "modifiedCount": 11
+      },
+      "cumulativeTime": {
+        "delta": 3670,
+        "wake": 3639,
+        "rem": 2531,
+        "light": 6254
+      },
+      "normal": {
+        "veryLowPower": 87,
+        "lowPower": 46,
+        "highPower": 60,
+        "veryLowPeak": 73,
+        "lowPeak": 32,
+        "highPeak": 54,
+        "veryLowMean": 73,
+        "lowMean": 44,
+        "highMean": 74,
+        "totalPower": 93,
+        "highRatio": 91,
+        "lowRatio": 92,
+        "veryLowRatio": 47,
+        "newBandRatio": 33,
+        "pulseMean": 68,
+        "pulseDeviation": 99,
+        "o2Deviation": 87,
+        "breathMean": 29,
+        "breathDeviation": 98,
+        "minuteVent": 37
+      }
+    },
+    {
+      "pulseMean": 52,
+      "pulseDeviation": 69,
+      "o2Mean": 89,
+      "o2Min": 30,
+      "o2Deviation": 50,
+      "stage": {
+        "raw": "delta",
+        "filtered": "delta",
+        "final": "delta",
+        "realtime": "light",
+        "filteredCount": 38,
+        "modifiedCount": 17
+      },
+      "cumulativeTime": {
+        "delta": 818,
+        "wake": 4891,
+        "rem": 4908,
+        "light": 3922
+      },
+      "normal": {
+        "veryLowPower": 61,
+        "lowPower": 37,
+        "highPower": 24,
+        "veryLowPeak": 53,
+        "lowPeak": 71,
+        "highPeak": 89,
+        "veryLowMean": 48,
+        "lowMean": 45,
+        "highMean": 74,
+        "totalPower": 26,
+        "highRatio": 55,
+        "lowRatio": 21,
+        "veryLowRatio": 50,
+        "newBandRatio": 37,
+        "pulseMean": 80,
+        "pulseDeviation": 87,
+        "o2Deviation": 55,
+        "breathMean": 22,
+        "breathDeviation": 29,
+        "minuteVent": 72
+      }
+    },
+    {
+      "pulseMean": 80,
+      "pulseDeviation": 24,
+      "o2Mean": 40,
+      "o2Min": 80,
+      "o2Deviation": 98,
+      "stage": {
+        "raw": "light",
+        "filtered": "light",
+        "final": "wake",
+        "realtime": "delta",
+        "filteredCount": 50,
+        "modifiedCount": 30
+      },
+      "cumulativeTime": {
+        "delta": 5844,
+        "wake": 1505,
+        "rem": 3282,
+        "light": 6478
+      },
+      "normal": {
+        "veryLowPower": 85,
+        "lowPower": 91,
+        "highPower": 90,
+        "veryLowPeak": 55,
+        "lowPeak": 54,
+        "highPeak": 100,
+        "veryLowMean": 46,
+        "lowMean": 80,
+        "highMean": 20,
+        "totalPower": 63,
+        "highRatio": 92,
+        "lowRatio": 23,
+        "veryLowRatio": 61,
+        "newBandRatio": 80,
+        "pulseMean": 87,
+        "pulseDeviation": 69,
+        "o2Deviation": 36,
+        "breathMean": 56,
+        "breathDeviation": 20,
+        "minuteVent": 88
+      }
+    }
+  ]
+}

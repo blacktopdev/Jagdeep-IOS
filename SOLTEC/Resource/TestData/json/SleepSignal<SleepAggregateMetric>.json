@@ -1,0 +1,122 @@
+{
+  "veryLowPower": {
+    "min": 43,
+    "max": 88,
+    "mean": 65.5,
+    "range": 45
+  },
+  "lowPower": {
+    "min": 37,
+    "max": 87,
+    "mean": 62,
+    "range": 50
+  },
+  "highPower": {
+    "min": 47,
+    "max": 68,
+    "mean": 57.5,
+    "range": 21
+  },
+  "veryLowPeak": {
+    "min": 37,
+    "max": 84,
+    "mean": 60.5,
+    "range": 47
+  },
+  "lowPeak": {
+    "min": 46,
+    "max": 93,
+    "mean": 69.5,
+    "range": 47
+  },
+  "highPeak": {
+    "min": 40,
+    "max": 98,
+    "mean": 69,
+    "range": 58
+  },
+  "veryLowMean": {
+    "min": 36,
+    "max": 79,
+    "mean": 57.5,
+    "range": 43
+  },
+  "lowMean": {
+    "min": 50,
+    "max": 91,
+    "mean": 70.5,
+    "range": 41
+  },
+  "highMean": {
+    "min": 40,
+    "max": 72,
+    "mean": 56,
+    "range": 32
+  },
+  "totalPower": {
+    "min": 47,
+    "max": 62,
+    "mean": 54.5,
+    "range": 15
+  },
+  "highRatio": {
+    "min": 29,
+    "max": 75,
+    "mean": 52,
+    "range": 46
+  },
+  "lowRatio": {
+    "min": 29,
+    "max": 89,
+    "mean": 59,
+    "range": 60
+  },
+  "veryLowRatio": {
+    "min": 32,
+    "max": 88,
+    "mean": 60,
+    "range": 56
+  },
+  "newBandRatio": {
+    "min": 36,
+    "max": 85,
+    "mean": 60.5,
+    "range": 49
+  },
+  "pulseMean": {
+    "min": 22,
+    "max": 82,
+    "mean": 52,
+    "range": 60
+  },
+  "pulseDeviation": {
+    "min": 47,
+    "max": 61,
+    "mean": 54,
+    "range": 14
+  },
+  "o2Deviation": {
+    "min": 38,
+    "max": 93,
+    "mean": 65.5,
+    "range": 55
+  },
+  "breathMean": {
+    "min": 22,
+    "max": 74,
+    "mean": 48,
+    "range": 52
+  },
+  "breathDeviation": {
+    "min": 34,
+    "max": 98,
+    "mean": 66,
+    "range": 64
+  },
+  "minuteVent": {
+    "min": 41,
+    "max": 84,
+    "mean": 62.5,
+    "range": 43
+  }
+}

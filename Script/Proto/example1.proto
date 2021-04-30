@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+// Messages can be imported:
+// import "myproject/other_protos.proto";
+
+message TestMessage {
+	string uuid = 1;
+	string name = 2;
+
+	// Repeated scalars were not encoded so efficiently in the past, so it's best to specify newer encoding:
+	//		repeated int32 samples = 3 [packed=true];
+	// Not necessary in Proto3.
+	repeated int32 samples = 3;
+
+	// If fields are ever deleted, it's best to permanently reserve the respective field number(s), for backwards compatibility
+	reserved 4, 5;
+
+	// Enums
+	enum Corpus {
+		UNIVERSAL = 0;
+		WEB = 1;
+		IMAGES = 2;
+		LOCAL = 3;
+		NEWS = 4;
+		PRODUCTS = 5;
+		VIDEO = 6;
+	}
+	Corpus corpus = 6;
+
+	// Nested structure is fine
+	message TestSubMessage {
+		bool gotSubMessage = 1;
+	}
+	TestSubMessage subMessage = 7;
+
+	// Nested structure defined in a higher scope is fine
+	repeated Geolocation locations = 8;
+}
+
+message Geolocation {
+	double latitude = 1;
+	double longitude = 2;
+}
+

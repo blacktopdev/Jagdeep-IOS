@@ -1,0 +1,38 @@
+{
+  "wakeMean": {
+    "pulseMean": 26,
+    "pulseDeviation": 93,
+    "o2Deviation": 70,
+    "veryLowPower": 65,
+    "veryLowMean": 72,
+    "wakeRemDiff": 53,
+    "veryLowRatio": 34
+  },
+  "remMean": {
+    "pulseMean": 88,
+    "pulseDeviation": 64,
+    "o2Deviation": 52,
+    "veryLowPower": 91,
+    "veryLowMean": 31,
+    "wakeRemDiff": 31,
+    "veryLowRatio": 28
+  },
+  "lightMean": {
+    "pulseMean": 87,
+    "pulseDeviation": 39,
+    "o2Deviation": 66,
+    "veryLowPower": 45,
+    "veryLowMean": 32,
+    "wakeRemDiff": 25,
+    "veryLowRatio": 84
+  },
+  "deltaMean": {
+    "pulseMean": 46,
+    "pulseDeviation": 78,
+    "o2Deviation": 100,
+    "veryLowPower": 67,
+    "veryLowMean": 68,
+    "wakeRemDiff": 77,
+    "veryLowRatio": 77
+  }
+}

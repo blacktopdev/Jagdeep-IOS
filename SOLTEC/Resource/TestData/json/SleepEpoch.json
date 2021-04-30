@@ -1,0 +1,43 @@
+{
+  "pulseMean": 66,
+  "pulseDeviation": 25,
+  "o2Mean": 62,
+  "o2Min": 43,
+  "o2Deviation": 43,
+  "stage": {
+    "raw": "light",
+    "filtered": "rem",
+    "final": "wake",
+    "realtime": "wake",
+    "filteredCount": 34,
+    "modifiedCount": 11
+  },
+  "cumulativeTime": {
+    "delta": 3670,
+    "wake": 3639,
+    "rem": 2531,
+    "light": 6254
+  },
+  "normal": {
+    "veryLowPower": 87,
+    "lowPower": 46,
+    "highPower": 60,
+    "veryLowPeak": 73,
+    "lowPeak": 32,
+    "highPeak": 54,
+    "veryLowMean": 73,
+    "lowMean": 44,
+    "highMean": 74,
+    "totalPower": 93,
+    "highRatio": 91,
+    "lowRatio": 92,
+    "veryLowRatio": 47,
+    "newBandRatio": 33,
+    "pulseMean": 68,
+    "pulseDeviation": 99,
+    "o2Deviation": 87,
+    "breathMean": 29,
+    "breathDeviation": 98,
+    "minuteVent": 37
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "device-track-cable.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,22 @@
+            {
+              "veryLowPower": 78,
+              "lowPower": 52,
+              "highPower": 44,
+              "veryLowPeak": 61,
+              "lowPeak": 21,
+              "highPeak": 81,
+              "veryLowMean": 41,
+              "lowMean": 93,
+              "highMean": 55,
+              "totalPower": 82,
+              "highRatio": 99,
+              "lowRatio": 82,
+              "veryLowRatio": 56,
+              "newBandRatio": 72,
+              "pulseMean": 21,
+              "pulseDeviation": 37,
+              "o2Deviation": 51,
+              "breathMean": 21,
+              "breathDeviation": 81,
+              "minuteVent": 93
+            }
